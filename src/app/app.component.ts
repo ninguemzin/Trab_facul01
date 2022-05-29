@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Projeto1';
+  title = 'Angular';
+  nome = '';
+  vetor = ['Tv', 'Cadeira', 'Sofá', 'Mesa', 'Celular'];
+
+  add() {
+    let n = this.nome;
+    alert(n)
+    this.vetor.push(n)
+    this.nome = ''
+  }
+
+  remover(x){
+    this.vetor.splice(x,1)
+  }
 }
