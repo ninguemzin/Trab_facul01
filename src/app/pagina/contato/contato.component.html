@@ -1,3 +1,22 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Valor</th>
+        <th>Desconto</th>
+        <th>Fabricação</th>
+      </tr>
+      <tr>
+        <td>{{ p1.nome | uppercase }}</td>
+        <td>{{ p1.email | lowercase }}</td>
+        <td>{{ p1.valor | currency: "BRL" }}</td>
+        <td>{{ p1.desconto | percent }}</td>
+        <td>{{ p1.fabricacao | date: "fullDate" }}</td>
+      </tr>
+    </thead>
+  </table>
+  
 <form action="">
     <div class="form-group">
         <label for="nome">Nome</label>
