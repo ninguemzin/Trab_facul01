@@ -102,9 +102,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "Projeto1"
+  "defaultProject": "Projeto1",
+  "cli": {
+    "analytics": "107d5849-79d8-4148-9781-0f40baceb367",
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

@@ -1,0 +1,23 @@
+<div class="container">
+  <label for="" class="label-table">Digite o nome de um Objeto:</label>
+
+  <input
+    type="text"
+    name="teste"
+    class="form-table form-control"
+    [(ngModel)]="nome"
+  />
+  <button class="btn add-table btn-success" (click)="add()">Adicionar</button>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr *ngFor="let o of vetor; let i = index">
+        <td>{{ i }}</td>
+        <td>{{ o }}</td>
+        <td>
+          <button class="btn btn-outline-danger" (click)="remover(i)">X</button>
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>

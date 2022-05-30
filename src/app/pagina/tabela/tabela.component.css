@@ -1,0 +1,15 @@
+.label-table {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-table {
+     width: 180px;
+     display: inline !important;
+}
+
+.add-table {
+    margin-left: 20px;
+    margin-bottom: 5.5px;
+}

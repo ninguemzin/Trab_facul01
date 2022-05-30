@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +9,12 @@ import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { MenuComponent } from './pagina/menu/menu.component';
 import { ListaComponent } from './pagina/lista/lista.component';
+import { TabelaComponent } from './pagina/tabela/tabela.component';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import ptBr from '@angular/common/locales/pt'; registerLocaleData(ptBr);
+
+
 
 @NgModule({
   declarations: [
@@ -16,14 +22,15 @@ import { ListaComponent } from './pagina/lista/lista.component';
     ContatoComponent,
     HomeComponent,
     MenuComponent,
-    ListaComponent
+    ListaComponent,
+    TabelaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ {provide: LOCALE_ID, useValue: 'pt'}],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
