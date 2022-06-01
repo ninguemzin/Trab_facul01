@@ -1,11 +1,17 @@
-.nav-home {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar {
+    padding-left: 30px !important;
+    padding-right: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-size: 22px;
 }
 
-.navbar-collapse {
-    bottom: 0;
-    right: 15;
-    padding: 0 1100px !important;
-  
+.collapse {
+    padding-left: 20px !important;
+}
+
+.navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-size: 22px;
 }

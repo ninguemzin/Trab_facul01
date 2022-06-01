@@ -1,1 +1,22 @@
+.container {
+    background-color: #4858b287;
+    height: 200vh !important;
+    width: 100% !important;
+    
+}
+
+.imgs {
+    margin-top: 100px;
+    background-color: aquamarine;
+    height: 50vh;
+    width: 50vw;
+    padding: 15px 15px;
+
+}
+.carousel {
+    margin-top: 50px;
+}
+
+
+
 
