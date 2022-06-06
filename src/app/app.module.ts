@@ -12,7 +12,8 @@ import { TabelaComponent } from './pagina/tabela/tabela.component';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
-import { CarouselComponent } from './pagina/home/carousel/carousel.component'; registerLocaleData(ptBr);
+import { CarouselComponent} from './pagina/home/carousel/carousel.component';
+registerLocaleData(ptBr);
 
 
 
