@@ -26,12 +26,21 @@
     height: 280px;
     margin-left: 60px;
 }
+.car1, .car4 {
+    margin-left: 0;
+}
 
 img {
     width: 280px;
     height: 180px;
 }
 
+.descricao {
+    display: flex-end;
+    background-color: beige;
+    width: 280px;
+    height: 100px;
+}
 
 
 

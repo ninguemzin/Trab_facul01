@@ -26,3 +26,8 @@
     position: relative;
 
 }
+
+.descricao {
+    display: flex-end;
+    background-color: beige;
+}
