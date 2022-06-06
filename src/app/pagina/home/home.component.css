@@ -1,8 +1,38 @@
 .cont {
-    background-color: #4858b287;
     width: 100%;
-
 }
+
+.linha1 {
+    width: 100%;
+    margin-top: 25px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha2 {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car1, .car2, .car3,
+.car4, .car5, .car6 {
+    background-color: aquamarine;
+    width: 280px;
+    height: 280px;
+    margin-left: 60px;
+}
+
+img {
+    width: 280px;
+    height: 180px;
+}
+
+
 
 
 
