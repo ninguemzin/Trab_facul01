@@ -1,0 +1,74 @@
+.container-compra {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content:space-between;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+img {
+  width: 450px;
+  height: 250px;
+  border-radius: 12px;
+}
+
+.detalhes {
+  background-color: aquamarine;
+  margin-left: 100px;
+  width: 720px;
+  height: 1050px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 31px;
+}
+
+h2 {
+  margin-top: 22px;
+  font-size: 21px;
+}
+
+h3 {
+  margin-top: 32px;
+  font-size: 12px;
+}
+
+.comprar {
+  margin-top: 25px;
+  color: aliceblue;
+  background-color: rgb(99, 208, 99);
+  border-color: green;
+  border-radius: 12px;
+  height: 35px;
+  width: 120px;
+}
+
+.cont-2 {
+  width: 100%;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.linha1 {
+  margin-top: 25px;
+}
+
+.linha1, .linha2 {
+  width: 450px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cars-option {
+  width: 220px;
+  height: 120px;
+}
+
+.car2, .car4 {
+  margin-left: 15px;
+}
