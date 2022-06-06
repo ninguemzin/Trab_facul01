@@ -1,0 +1,27 @@
+
+.d-block{
+    height: 350px;
+    width: 100% !important;
+    display: flex;
+    flex-direction: center;
+    position: relative;
+
+}
+
+.carousel-item.active {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: center;
+
+}
+
+.carousel {
+    height: 350px !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    position: relative;
+
+}
