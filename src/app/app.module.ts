@@ -13,6 +13,7 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
 import { CarouselComponent} from './pagina/home/carousel/carousel.component';
+import { FormularioComponent } from './pagina/tabela/formulario/formulario.component';
 registerLocaleData(ptBr);
 
 
@@ -24,7 +25,8 @@ registerLocaleData(ptBr);
     HomeComponent,
     MenuComponent,
     TabelaComponent,
-    CarouselComponent
+    CarouselComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

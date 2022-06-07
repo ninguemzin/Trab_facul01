@@ -15,7 +15,6 @@ img {
 }
 
 .detalhes {
-  background-color: aquamarine;
   margin-left: 100px;
   width: 720px;
   height: 1050px;
@@ -48,7 +47,6 @@ h3 {
 
 .cont-2 {
   width: 100%;
-  background-color: aquamarine;
   text-align: center;
 }
 
