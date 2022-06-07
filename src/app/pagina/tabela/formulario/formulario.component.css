@@ -1,88 +1,8 @@
-.container-compra {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content:space-between;
-    margin-top: 25px;
-    padding-left: 50px;
-    padding-right: 80px;
-  }
-  
-  img {
-    width: 450px;
-    height: 250px;
-    border-radius: 12px;
-  }
-  
-  .detalhes {
-    background-color: white;
-    margin-left: 100px;
-    width: 720px;
-    height: 1140px;
-    text-align: center;
-  }
-  
-  
-  .comprar {
-    margin-top: 25px;
-    color: aliceblue;
-    background-color: rgb(99, 208, 99);
-    border-color: green;
-    border-radius: 12px;
-    height: 35px;
-    width: 120px;
-  }
-  
-  .cont-2 {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .linha1 {
-    margin-top: 25px;
-  }
-  
-  .linha1, .linha2 {
-    width: 450px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cars-option {
-    width: 220px;
-    height: 120px;
-  }
-   #main > article {
-     background: rgb(255, 255, 255);
-     flex: 1;
-     box-shadow: 0 0 2em black;
-     border-radius: 1.5em;
-   }
-   #main > nav {
-    flex: 0 0 20vw;
-    background: #ffffff;
-  } 
-   #main > aside {
-    flex: 0 0 20vw;
-  }
-  
-  
-   #main > nav {
-     order: -1;
-   }
-   header, footer, article, nav, aside {
-     padding: 1em;
-   }
-   header, footer {
-     background: #ffffff;
-     height: 20vh;
-   }
-  
+
   .d_compra {
     color: rgb(0, 0, 0);
-    margin-top: 15px !important; 
+    margin-top: 15px;
+    padding: 30px; 
   }
   
   .d_categoria {
@@ -91,9 +11,7 @@
   
   }
   
-  .flex {
-  flex-wrap: wrap;
-  }
+
   
   .in_n {
     width: 65px;
@@ -135,6 +53,13 @@
   
   .num {
     size: 12px;
+  }
+.btn-clear {
+    margin-top: 15px;
+}
+
+.btn-enter {
+      margin-top: 15px;
   }
   
   fieldset {

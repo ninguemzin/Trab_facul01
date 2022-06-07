@@ -14,10 +14,13 @@ img {
   border-radius: 12px;
 }
 
+.car-img {
+  width: 3%0;
+}
+
 .detalhes {
   margin-left: 100px;
-  width: 720px;
-  height: 1050px;
+  width: 70%;
   text-align: center;
 }
 
@@ -50,16 +53,13 @@ h3 {
   text-align: center;
 }
 
-.linha1 {
-  margin-top: 25px;
-}
-
 .linha1, .linha2 {
   width: 450px;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 45px;
 }
 
 .cars-option {
