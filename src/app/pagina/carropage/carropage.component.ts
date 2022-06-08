@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ServiceService } from 'src/app/service/service.service';
+
 
 @Component({
   selector: 'app-carropage',
@@ -8,11 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CarropageComponent implements OnInit {
 
-id: string;
+  constructor(private param:ActivatedRoute,private service:ServiceService) { }
+  getCarroId:any;
+  carroData:any;
 
-  constructor(private route:ActivatedRoute) { }
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['nameCar']
+    this.getCarroId = this.param.snapshot.paramMap.get('id');
+    console.log(this.getCarroId,'getcarro');
+    if(this.getCarroId) 
+    {
+      this.carroData = this.service.carros.filter((value)=>{
+        return value.id == this.getCarroId;
+      });
+      console.log(this.carroData,'carrodata')
+    }
   }
-
 }

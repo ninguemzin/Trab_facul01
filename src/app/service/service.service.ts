@@ -10,7 +10,7 @@ export class ServiceService {
   carros = [
     {
       id: 1,
-      nameCar: "Opala SS4",
+      namecar: "Opala SS4",
       ano: "1973",
       marca: "Chevrolet",
       cor: "vermelho",
@@ -20,7 +20,7 @@ export class ServiceService {
     },
     {
       id: 2,
-      nameCar: "Corsel",
+      nomecar: "Corsel",
       ano: "1976",
       marca: "Ford",
       cor: "Amarelo",
@@ -30,7 +30,7 @@ export class ServiceService {
     },
     {
       id: 3,
-      nameCar: "Kombi Corujinha",
+      namecar: "Kombi Corujinha",
       ano: "1974",
       marca: "Volkswagen",
       cor: "Laranja",
@@ -40,7 +40,7 @@ export class ServiceService {
     },
     {
       id: 4,
-      nameCar: "Fusca",
+      namecar: "Fusca",
       ano: "1986",
       marca: "Volkswagen",
       cor: "Azul",
@@ -50,7 +50,7 @@ export class ServiceService {
     },
     {
       id: 5,
-      nameCar: "Fiat 147",
+      namecar: "Fiat 147",
       ano: "1977",
       marca: "Fiat",
       cor: "Marrom",
@@ -60,7 +60,7 @@ export class ServiceService {
     },
     {
       id: 6,
-      nameCar: "Ford F100",
+      namecar: "Ford F100",
       ano: "1986",
       marca: "Ford",
       cor: "Preto esverdeado",
