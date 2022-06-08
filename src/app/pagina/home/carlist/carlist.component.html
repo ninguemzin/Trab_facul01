@@ -1,6 +1,6 @@
 <div class="carros">
     <div class="linha">
-      <div *ngFor="let car of carros" routerLinkActive="active" class="car1" routerLink="[/tabela,car.id]">
+      <div *ngFor="let car of carros" routerLinkActive="active" class="car1" [routerLink]="'/carropage/' + car.id">
         <img src="{{car.img}}" alt="" />
         <h1  class="descricao">{{car.nameCar}}<p>{{car.valor}}</p></h1>
       </div>

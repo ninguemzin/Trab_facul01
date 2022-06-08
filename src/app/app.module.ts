@@ -9,12 +9,11 @@ import { FormsModule } from '@angular/forms';
 import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { MenuComponent } from './pagina/menu/menu.component';
-import { TabelaComponent } from './pagina/tabela/tabela.component';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
 import { CarouselComponent} from './pagina/home/carousel/carousel.component';
-import { FormularioComponent } from './pagina/tabela/formulario/formulario.component';
+import { FormularioComponent } from './pagina/carropage/formulario/formulario.component';
 import { CarlistComponent } from './pagina/home/carlist/carlist.component';
 import { CarropageComponent } from './pagina/carropage/carropage.component';
 registerLocaleData(ptBr);
@@ -27,7 +26,7 @@ registerLocaleData(ptBr);
     ContatoComponent,
     HomeComponent,
     MenuComponent,
-    TabelaComponent,
+    CarropageComponent,
     CarouselComponent,
     FormularioComponent,
     CarlistComponent,

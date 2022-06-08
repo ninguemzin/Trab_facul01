@@ -8,11 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CarropageComponent implements OnInit {
 
-  constructor(private param:ActivatedRoute) { }
-  getCarroId:any
+id: string;
+
+  constructor(private route:ActivatedRoute) { }
   ngOnInit(): void {
-    this.getCarroId = this.param.snapshot.paramMap.get('id');
-    console.log(this.getCarroId,'getcarro')
+    this.id = this.route.snapshot.params['nameCar']
   }
 
 }
