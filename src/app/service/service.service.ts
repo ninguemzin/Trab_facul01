@@ -20,7 +20,7 @@ export class ServiceService {
     },
     {
       id: 2,
-      nomecar: "Corsel",
+      namecar: "Corsel",
       ano: "1976",
       marca: "Ford",
       cor: "Amarelo",

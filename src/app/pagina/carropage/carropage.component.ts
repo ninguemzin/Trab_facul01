@@ -22,7 +22,7 @@ export class CarropageComponent implements OnInit {
       this.carroData = this.service.carros.filter((value)=>{
         return value.id == this.getCarroId;
       });
-      console.log(this.carroData,'carrodata')
+      console.log(this.carroData,'carrodata>>')
     }
   }
 }

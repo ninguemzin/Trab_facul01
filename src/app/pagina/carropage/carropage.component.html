@@ -1,21 +1,41 @@
-<div class="container-compra" *ngIf="carroData">
-    <div class="car-img"><img src="" alt="" />
+<div class="container-compra" >
+  <div class="car-img" *ngIf="carroData">
+    <img src="{{carroData[0].img}}" alt="" />
     <div class="linha1">
-        <img class="cars-option" src="assets/img/Chevrolet_Opala_SS_19744.jpg" alt="">
-        <img class="cars-option car2" src="assets/img/Fusca-1972-Fusca-antigo-30.jpg" alt="">
+      <img
+        class="cars-option"
+        src="assets/img/Chevrolet_Opala_SS_19744.jpg"
+        alt=""
+      />
+      <img
+        class="cars-option car2"
+        src="assets/img/Fusca-1972-Fusca-antigo-30.jpg"
+        alt=""
+      />
     </div>
     <div class="linha2">
-        <img class="cars-option" src="assets/img/Kombi-Cprujinha-1968-Motor-Tudo-24.jpg" alt="">
-        <img class="cars-option car4" src="assets/img/Chevrolet_Opala_SS_19744.jpg" alt="">
+      <img
+        class="cars-option"
+        src="assets/img/Kombi-Cprujinha-1968-Motor-Tudo-24.jpg"
+        alt=""
+      />
+      <img
+        class="cars-option car4"
+        src="assets/img/Chevrolet_Opala_SS_19744.jpg"
+        alt=""
+      />
     </div>
-    </div>
-    <div class="detalhes">
-        <fieldset class="compra_fi">
-            <h1></h1>
-            <h2>alguma coisa</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipi praesentium nobis at, dignissimos minima impedit quia quibusdam qua</h3>
-            <button class="comprar">Comprar</button>
-        </fieldset>
-        <app-formulario></app-formulario>
-    </div>
+  </div>
+  <div class="detalhes">
+    <fieldset class="compra_fi"  *ngIf="carroData">
+      <h1>Nome do carro</h1>
+      <h2>alguma coisa</h2>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipi praesentium nobis at,
+        dignissimos minima impedit quia quibusdam qua
+      </h3>
+      <button class="comprar">Comprar</button>
+    </fieldset>
+    <app-formulario></app-formulario>
+  </div>
 </div>
