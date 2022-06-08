@@ -1,16 +1,12 @@
 <div class="carros">
-    <div class="linha1">
-      <div *ngFor="let carro of carros, let i = index " class="car1" routerLink="/tabela">
-        <img src="assets/img/Ford_Corcel.jpg" alt="" />
-        <div  class="descricao">{{carro}}</div>
+    <div class="linha">
+      <div *ngFor="let car of carros" class="car1" routerLink="['/tabela',car.id]">
+        <img src="{{car.img}}" alt="" />
+        <h1  class="descricao">{{car.nameCar}}<p>{{car.valor}}</p></h1>
       </div>
-    </div>
-    <div class="linha2">
-      <div class="car4" routerLink="/tabela">
-        <img src="assets/img/Chevrolet_Opala_SS_19744.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-  </div>
+</div>
+
+
 
   <!--
 

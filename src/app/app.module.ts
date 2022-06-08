@@ -16,6 +16,7 @@ import ptBr from '@angular/common/locales/pt';
 import { CarouselComponent} from './pagina/home/carousel/carousel.component';
 import { FormularioComponent } from './pagina/tabela/formulario/formulario.component';
 import { CarlistComponent } from './pagina/home/carlist/carlist.component';
+import { CarropageComponent } from './pagina/carropage/carropage.component';
 registerLocaleData(ptBr);
 
 
@@ -29,7 +30,8 @@ registerLocaleData(ptBr);
     TabelaComponent,
     CarouselComponent,
     FormularioComponent,
-    CarlistComponent
+    CarlistComponent,
+    CarropageComponent
   ],
   imports: [
     BrowserModule,

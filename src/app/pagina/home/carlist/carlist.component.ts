@@ -8,14 +8,10 @@ import { ServiceService } from 'src/app/service/service.service';
 })
 export class CarlistComponent implements OnInit {
 
-  carros: string[] = ["Corsel", "Opala", "Fusca", "Kombi", "carro2", "carro3"]
-
   constructor(private service:ServiceService) { }
-
+  carros:any;
   ngOnInit(): void {
-    for (let i=0; i<this.carros.length; i++) {
-      let carro = this.carros[i];
+    this.carros = this.service.carros
   }
 
-}
 }
