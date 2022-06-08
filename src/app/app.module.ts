@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { routing } from './app-routing.module'
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
@@ -14,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
 import { CarouselComponent} from './pagina/home/carousel/carousel.component';
 import { FormularioComponent } from './pagina/tabela/formulario/formulario.component';
+import { CarlistComponent } from './pagina/home/carlist/carlist.component';
 registerLocaleData(ptBr);
 
 
@@ -26,12 +28,14 @@ registerLocaleData(ptBr);
     MenuComponent,
     TabelaComponent,
     CarouselComponent,
-    FormularioComponent
+    FormularioComponent,
+    CarlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [ {provide: LOCALE_ID, useValue: 'pt'}],
   bootstrap: [AppComponent],

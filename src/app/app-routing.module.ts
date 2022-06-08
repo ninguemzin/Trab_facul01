@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
 import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { TabelaComponent } from './pagina/tabela/tabela.component';
@@ -10,6 +11,8 @@ const routes: Routes = [
   {path:'contato', component: ContatoComponent},
   {path:'tabela', component: TabelaComponent}
 ];
+
+export const routing: ModuleWithProviders<any> = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
