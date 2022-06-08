@@ -1,35 +1,7 @@
 <div class="carros">
     <div class="linha">
-      <div *ngFor="let car of carros" class="car1" routerLink="['/tabela',car.id]">
+      <div *ngFor="let car of carros" routerLinkActive="active" class="car1" routerLink="[/tabela,car.id]">
         <img src="{{car.img}}" alt="" />
         <h1  class="descricao">{{car.nameCar}}<p>{{car.valor}}</p></h1>
       </div>
 </div>
-
-
-
-  <!--
-
-          <div class="car2" routerLink="/tabela">
-        <img src="assets/img/Fusca-1972-Fusca-antigo-30.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-      <div class="car3" routerLink="/tabela">
-        <img src="assets/img/Kombi-Cprujinha-1968-Motor-Tudo-24.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-    </div>
-    <div class="linha2">
-      <div class="car4" routerLink="/tabela">
-        <img src="assets/img/Chevrolet_Opala_SS_19744.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-      <div class="car5" routerLink="/tabela">
-        <img src="assets/img/Ford_Corcel.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-      <div class="car6" routerLink="/tabela">
-        <img src="assets/img/Ford_Corcel.jpg" alt="" />
-        <div class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis omnis l</div>
-      </div>
-  -->

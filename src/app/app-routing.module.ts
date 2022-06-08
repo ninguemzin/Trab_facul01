@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'contato', component: ContatoComponent},
   {path:'tabela', component: TabelaComponent},
-  {path:'carro/:id', component: CarropageComponent}
+  {path:'tabela/:id', component: CarropageComponent}
 ];
 
 export const routing: ModuleWithProviders<any> = RouterModule.forRoot(routes);

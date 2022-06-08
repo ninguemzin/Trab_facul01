@@ -1,32 +1,42 @@
+
 .carros {
-    padding: 60px 60px;
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
 
 }
 
 
 .descricao {
-    display: grid;
     font-size: 30px;
     text-align: center;
+    margin-top: 15px;
+}
+p {
+    margin-top: 15px;
+    color: rgb(12, 166, 12);
 }
 
 .linha {
-    border-color: 40px solid rgb(214, 151, 151);;
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 250px;
-    grid-row-gap: 80px;
+    grid-gap: 50px;
+    border-radius: 10px;
+    
 }
 
 .car1 {
     width: 350px;
-    height: 250px;
+    height: 360px;
+    background-color: #ebe8e8;   
+    border-radius: 10px;
 }
 
 img {
     padding: 10px;
     width: 100%;
-    height: 100%;
+    height: 60%;
 }
 
 
