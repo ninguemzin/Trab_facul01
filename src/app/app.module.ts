@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { routing } from './app-routing.module'
 import { AppComponent } from './app.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule } from '@angular/forms';
 import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { MenuComponent } from './pagina/menu/menu.component';
@@ -16,9 +16,8 @@ import { CarouselComponent} from './pagina/home/carousel/carousel.component';
 import { FormularioComponent } from './pagina/carropage/formulario/formulario.component';
 import { CarlistComponent } from './pagina/home/carlist/carlist.component';
 import { CarropageComponent } from './pagina/carropage/carropage.component';
+import { HttpClientModule } from '@angular/common/http';
 registerLocaleData(ptBr);
-
-
 
 @NgModule({
   declarations: [
@@ -36,6 +35,7 @@ registerLocaleData(ptBr);
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     routing
   ],
   providers: [ {provide: LOCALE_ID, useValue: 'pt'}],
