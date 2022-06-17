@@ -13,5 +13,4 @@ export class CarlistComponent implements OnInit {
   ngOnInit(): void {
     this.carros = this.service.carros
   }
-
 }

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { routing } from './app-routing.module'
 import { AppComponent } from './app.component';
 
-import { FormBuilder, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { MenuComponent } from './pagina/menu/menu.component';

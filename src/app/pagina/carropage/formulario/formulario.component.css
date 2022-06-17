@@ -50,23 +50,32 @@
   }
 
 .cpf{
-    width: 150px;
-    margin-right: 100px;
+    width: 50%;
+    margin-right: 5px;
 }
 
+.input-num {
+  width: 20%;
+}
+
+.endereco {
+  width: 80%;
+  margin-right: 5px;
+}
 
 .dt-nc {
-    width: 180px;
+    width: 50%;
 }
-  .mgesq {
-    margin-left: 8px;
-  }
-  
+
   .linhah {
     display: flex;
     align-items: center;
     margin-top: 12px;
     margin-bottom: 12px;
+  }
+
+  .cep {
+    margin-left: 5px;
   }
   
   .mgesqc{

@@ -29,11 +29,16 @@
   h2 {
     margin-top: 22px;
     font-size: 21px;
+
   }
   
   h3 {
     margin-top: 32px;
     font-size: 12px;
+  }
+
+  .valor{
+    color: rgb(12, 166, 12);
   }
   
   .comprar {

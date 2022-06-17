@@ -1,72 +1,95 @@
-<form>
-    <article>
-    
-        
-        <fieldset class="d_compra">
-        
-            <legend>Informe seus Dados</legend>
-            
-            <div class="item linhah">
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <fieldset class="d_compra">
+    <legend>Informe seus Dados</legend>
 
-                <label for="nome">Nome:</label>
-                <input id="nome" type="text" name="nome" class="name form-control" placeholder="Nome">
+    <div class="item linhah">
+      <label for="nome">Nome:</label>
+      <input
+        #nomePe
+        id="nome"
+        type="text"
+        name="nome"
+        ngModel
+        class="name form-control"
+        placeholder="Nome"
+      />
+    </div>
 
-            </div>
-            
-            <div class="item linhah cpf-nas">
-                <label for="cpf">CPF:</label>
-                <input id="cpf" type="number" class="form-control cpf" name="cpf" placeholder="CPF">
+    <div class="item linhah cpf-nas">
+      <label for="cpf">CPF:</label>
+      <input
+        #cpf
+        id="cpf"
+        type="number"
+        class="form-control cpf"
+        ngModel
+        name="cpf"
+        placeholder="CPF"
+      />
 
-                <label for="dateNas" class="nasc">Nascimento:</label>
-                <input id="dataNs" type="date" class="form-control dt-nc" name="Data de nascimento">
-            </div>
-            
-            <div class="item linhah">
-                
-                <label for="email">Email:</label>
-                <input id="email" type="email" class="form-control" name="email" placeholder="Email" pattern=".+@gmail.com" size="30" required>
+      <label for="dateNas" class="nasc">Nascimento:</label>
+      <input
+        #dataNs
+        id="dataNs"
+        type="date"
+        class="form-control dt-nc"
+        name="Data de nascimento"
+      />
+    </div>
 
-            </div>
-           
-            <div class="item linhah">
+    <div class="item linhah">
+      <label for="email">Email:</label>
+      <input
+        #email
+        id="email"
+        type="email"
+        class="form-control"
+        name="email"
+        ngModel
+        placeholder="Email"
+        pattern=".+@gmail.com"
+        size="30"
+        required
+      />
+    </div>
 
-                    <label for="endereco">Endereço:</label>                             
-                    <input type="Endereço" class="form-control" name="Endereço">
-                
-                    <div class="mgesq">
-                        
-                    <label for="bairro">Bairro:</label>
-                    
-                    
-                    </div>   
-                    
-                    <input type="text" class="form-control" name="bairro">                   
-                      
-            </div>
-            <div class="item linhah">
+    <div class="item linhah">
+      <label for="endereco">Endereço:</label>
+      <input
+        #endereco
+        type="text"
+        class="form-control endereco"
+        name="Endereco"
+        ngModel
+      />
+      <label class="num"> N°:</label>
+      <input
+        #nCasa
+        class="input-numu"
+        type="number"
+        class="form-control input-num"
+        name="numero"
+        ngModel
+      />
+    </div>
+    <div class="item linhah">
+        <div class="mgesq">
+            <label for="bairro">Bairro:</label>
+          </div>
+          <input #bairro type="text" class="form-control" name="bairro"/>
+      <div class="mgesq">
+        <label for="cep" class="cep">CEP:</label>
+      </div>
+      <input #cep type="number" name="cep" class="form-control" ngModel/>
+    </div>
 
-                <label> N°:</label>
-                <input class="in_n" type="number" class="form-control"  name="numero">
-               
-                <div class="mgesq">
-                   
-                    <label for="endereco">CEP:</label>
-                    
-
-                </div>
-                <input type="number" name="cep" class="form-control">
-            
-            </div>
-            
-            <div class="d_botao">  
-
-                <input type="reset" class="form-control btn-clear" value="Limpar">
-                <input type="submit" class="form-control btn-enter btn-primary" value="Enviar">
-  
-            </div>
-
-        </fieldset>
-    </article>
-        <nav></nav>
-        <aside></aside>
+    <div class="d_botao">
+      <input type="reset" class="form-control btn-clear" value="Limpar"/>
+      <input
+        type="submit"
+        class="form-control btn-enter btn-primary"
+        value="Enviar"
+      />
+    </div>
+  </fieldset>
 </form>
