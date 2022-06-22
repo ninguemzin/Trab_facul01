@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { FormularioComponent } from '../pagina/carropage/formulario/formulario.component';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,10 @@ import { Injectable } from '@angular/core';
 export class ServiceService {
 
   constructor() { }
+
+  save(record: FormularioComponent) {
+
+  }
 
   carros = [
     {

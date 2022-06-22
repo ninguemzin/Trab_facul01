@@ -12,19 +12,7 @@
         ngModel
         class="name form-control"
         placeholder="Nome"
-      />
-    </div>
-
-    <div class="item linhah cpf-nas">
-      <label for="cpf">CPF:</label>
-      <input
-        #cpf
-        id="cpf"
-        type="number"
-        class="form-control cpf"
-        ngModel
-        name="cpf"
-        placeholder="CPF"
+        required
       />
 
       <label for="dateNas" class="nasc">Nascimento:</label>
@@ -34,57 +22,80 @@
         type="date"
         class="form-control dt-nc"
         name="Data de nascimento"
+        required
       />
     </div>
 
-    <div class="item linhah">
-      <label for="email">Email:</label>
+    <div class="item linhah cpf-nas">
+      <label for="cpf">CPF:</label>
+      <input
+        #cpf
+        id="cpf"
+        type="text"
+        class="form-control cpf"
+        ngModel
+        name="cpf"
+        placeholder="CPF"
+        required
+      />
+      <label for="email" class="label-email">Email:</label>
       <input
         #email
         id="email"
         type="email"
-        class="form-control"
+        class="input-email form-control"
         name="email"
         ngModel
         placeholder="Email"
         pattern=".+@gmail.com"
         size="30"
         required
+        email
+      />
+      <label for="cep" class="label-cep" required>CEP:</label>
+      <input
+        #cep
+        type="text"
+        name="cep"
+        class="form-control cep"
+        ngModel
+        required
       />
     </div>
-
     <div class="item linhah">
-      <label for="endereco">Endereço:</label>
+      <div class="mgesq">
+        <label for="bairro">Bairro:</label>
+      </div>
+      <input
+        #bairro
+        type="text"
+        class="form-control bairro"
+        name="bairro"
+        ngModel
+        required
+      />
+      <label for="endereco" class="label-endereco">Endereço:</label>
       <input
         #endereco
         type="text"
         class="form-control endereco"
         name="Endereco"
         ngModel
+        required
       />
       <label class="num"> N°:</label>
       <input
         #nCasa
-        class="input-numu"
-        type="number"
+        class="input-num"
+        type="text"
         class="form-control input-num"
         name="numero"
         ngModel
+        required
       />
     </div>
-    <div class="item linhah">
-        <div class="mgesq">
-            <label for="bairro">Bairro:</label>
-          </div>
-          <input #bairro type="text" class="form-control" name="bairro"/>
-      <div class="mgesq">
-        <label for="cep" class="cep">CEP:</label>
-      </div>
-      <input #cep type="number" name="cep" class="form-control" ngModel/>
-    </div>
-
     <div class="d_botao">
-      <input type="reset" class="form-control btn-clear" value="Limpar"/>
+      <input type="reset" class="form-control btn-clear" value="Limpar" />
       <input
         type="submit"
         class="form-control btn-enter btn-primary"

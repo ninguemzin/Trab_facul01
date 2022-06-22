@@ -11,7 +11,6 @@
   
   }
   
-  
   h1 {
     text-align: center;
     font-size: 40px;
@@ -27,10 +26,6 @@
     padding-right: 12px !important;
   }
   
-  
-.num {
-    size: 12px;
-  }
 .btn-clear {
     margin-top: 15px;
 }
@@ -46,25 +41,47 @@
   }
 
   label {
-      margin-right: 5px;
+      margin-right: 1%;
   }
 
 .cpf{
-    width: 50%;
+    width: 20%;
     margin-right: 5px;
 }
 
-.input-num {
+
+.name {
+  width: 50%;
+}
+
+.nasc{
+  margin-left: 6%;
+}
+
+.input-email {
   width: 20%;
 }
 
+.input-num {
+  width: 18%;
+}
+.label-endereco {
+  margin-left: 5px;
+}
+.bairro {
+  width: 35%;
+}
 .endereco {
-  width: 80%;
+  width: 70%;
   margin-right: 5px;
 }
 
 .dt-nc {
-    width: 50%;
+    width: 20%;
+}
+
+.input-email {
+  width: 35%;
 }
 
   .linhah {
@@ -75,12 +92,13 @@
   }
 
   .cep {
-    margin-left: 5px;
+    width: 20%;
   }
-  
-  .mgesqc{
-    margin-left: 60px;
-  
+  .label-cep {
+    margin-left: 25px;
+  }
+  .label-email {
+    margin-left: 10px;
   }
   fieldset {
       padding-right: 25px;
